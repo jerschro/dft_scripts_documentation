@@ -1,28 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/</loc>
-         <lastmod>2024-04-10</lastmod>
+         <loc>https://jerschro.github.io/dft_scripts_documentation/</loc>
+         <lastmod>2024-04-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/lammps/</loc>
-         <lastmod>2024-04-10</lastmod>
+         <loc>https://jerschro.github.io/dft_scripts_documentation/define_and_submit/</loc>
+         <lastmod>2024-04-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/read_functions/</loc>
-         <lastmod>2024-04-10</lastmod>
+         <loc>https://jerschro.github.io/dft_scripts_documentation/freeh/</loc>
+         <lastmod>2024-04-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/reference/</loc>
-         <lastmod>2024-04-10</lastmod>
+         <loc>https://jerschro.github.io/dft_scripts_documentation/read_control/</loc>
+         <lastmod>2024-04-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://jerschro.github.io/molecule_lib_documentation/todo/</loc>
-         <lastmod>2024-04-10</lastmod>
+         <loc>https://jerschro.github.io/dft_scripts_documentation/squeue_scripts/</loc>
+         <lastmod>2024-04-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/dft_scripts_documentation/todo/</loc>
+         <lastmod>2024-04-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/dft_scripts_documentation/turbo_dir/</loc>
+         <lastmod>2024-04-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/dft_scripts_documentation/vasp_energy/</loc>
+         <lastmod>2024-04-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/dft_scripts_documentation/vasp_thermo/</loc>
+         <lastmod>2024-04-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

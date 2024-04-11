@@ -1,16 +1,20 @@
-site_name: dft scripts Documentation
+site_name: dft scripts documentation
 site_url: https://jerschro.github.io/dft_scripts_documentation/
 site_author: Jeremy Schroeder
-site_description: Documentation of python library for manipulating molecular structures.
+site_description: Documentation of dft scripts
 repo_name: jerschro/dft_scripts_documentation
 repo_url: https://github.com/jerschro/dft_scripts_documentation
 
 nav:
-  - Home : index.md
+  - home : index.md
   - turbo_dir : turbo_dir.md
   - freeh : freeh.md
+  - automate define : define_and_submit.md
   - vasp_thermo : vasp_thermo.md
   - read_control : read_control.md
+  - vasp_energy : vasp_energy.md
+  - squeue : squeue_scripts.md
+  - todo : todo.md
 
 
 theme:

@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Documentation of python library for manipulating molecular structures.">
+        <meta name="description" content="Documentation of dft scripts">
       
       
         <meta name="author" content="Jeremy Schroeder">
@@ -15,19 +15,19 @@
       
       
       
-      <link rel="icon" href="/molecule_lib_documentation/assets/images/favicon.png">
+      <link rel="icon" href="/dft_scripts_documentation/assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
     
     
       
-        <title>molecule_lib Documentation</title>
+        <title>dft scripts documentation</title>
       
     
     
-      <link rel="stylesheet" href="/molecule_lib_documentation/assets/stylesheets/main.bcfcd587.min.css">
+      <link rel="stylesheet" href="/dft_scripts_documentation/assets/stylesheets/main.bcfcd587.min.css">
       
         
-        <link rel="stylesheet" href="/molecule_lib_documentation/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="/dft_scripts_documentation/assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,9 +46,7 @@
       
     
     
-      <link rel="stylesheet" href="/molecule_lib_documentation/assets/_mkdocstrings.css">
-    
-    <script>__md_scope=new URL("/molecule_lib_documentation/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("/dft_scripts_documentation/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -85,7 +83,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/molecule_lib_documentation/." title="molecule_lib Documentation" class="md-header__button md-logo" aria-label="molecule_lib Documentation" data-md-component="logo">
+    <a href="/dft_scripts_documentation/." title="dft scripts documentation" class="md-header__button md-logo" aria-label="dft scripts documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -99,7 +97,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            molecule_lib Documentation
+            dft scripts documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -128,7 +126,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
@@ -138,7 +136,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="orange" data-md-color-accent="lime"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
     
       <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
@@ -199,13 +197,13 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/jerschro/molecule_lib_documentation" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/jerschro/dft_scripts_documentation" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
-    jerschro/molecule_lib_documentation
+    jerschro/dft_scripts_documentation
   </div>
 </a>
       </div>
@@ -223,12 +221,12 @@
   
   
     <li class="md-tabs__item">
-      <a href="/molecule_lib_documentation/." class="md-tabs__link">
+      <a href="/dft_scripts_documentation/." class="md-tabs__link">
         
   
     
   
-  Home
+  home
 
       </a>
     </li>
@@ -240,12 +238,12 @@
   
   
     <li class="md-tabs__item">
-      <a href="/molecule_lib_documentation/read_functions/" class="md-tabs__link">
+      <a href="/dft_scripts_documentation/turbo_dir/" class="md-tabs__link">
         
   
     
   
-  Read Functions
+  turbo_dir
 
       </a>
     </li>
@@ -257,12 +255,12 @@
   
   
     <li class="md-tabs__item">
-      <a href="/molecule_lib_documentation/lammps/" class="md-tabs__link">
+      <a href="/dft_scripts_documentation/freeh/" class="md-tabs__link">
         
   
     
   
-  LAMMPS
+  freeh
 
       </a>
     </li>
@@ -274,12 +272,12 @@
   
   
     <li class="md-tabs__item">
-      <a href="/molecule_lib_documentation/reference/" class="md-tabs__link">
+      <a href="/dft_scripts_documentation/define_and_submit/" class="md-tabs__link">
         
   
     
   
-  API Reference
+  automate define
 
       </a>
     </li>
@@ -291,12 +289,80 @@
   
   
     <li class="md-tabs__item">
-      <a href="/molecule_lib_documentation/todo/" class="md-tabs__link">
+      <a href="/dft_scripts_documentation/vasp_thermo/" class="md-tabs__link">
         
   
     
   
-  Todo Page
+  vasp_thermo
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/dft_scripts_documentation/read_control/" class="md-tabs__link">
+        
+  
+    
+  
+  read_control
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/dft_scripts_documentation/vasp_energy/" class="md-tabs__link">
+        
+  
+    
+  
+  vasp_energy
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/dft_scripts_documentation/squeue_scripts/" class="md-tabs__link">
+        
+  
+    
+  
+  squeue
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/dft_scripts_documentation/todo/" class="md-tabs__link">
+        
+  
+    
+  
+  todo
 
       </a>
     </li>
@@ -331,23 +397,23 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/molecule_lib_documentation/." title="molecule_lib Documentation" class="md-nav__button md-logo" aria-label="molecule_lib Documentation" data-md-component="logo">
+    <a href="/dft_scripts_documentation/." title="dft scripts documentation" class="md-nav__button md-logo" aria-label="dft scripts documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    molecule_lib Documentation
+    dft scripts documentation
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/jerschro/molecule_lib_documentation" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/jerschro/dft_scripts_documentation" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
-    jerschro/molecule_lib_documentation
+    jerschro/dft_scripts_documentation
   </div>
 </a>
     </div>
@@ -361,11 +427,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/molecule_lib_documentation/." class="md-nav__link">
+      <a href="/dft_scripts_documentation/." class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Home
+    home
   </span>
   
 
@@ -381,11 +447,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/molecule_lib_documentation/read_functions/" class="md-nav__link">
+      <a href="/dft_scripts_documentation/turbo_dir/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Read Functions
+    turbo_dir
   </span>
   
 
@@ -401,11 +467,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/molecule_lib_documentation/lammps/" class="md-nav__link">
+      <a href="/dft_scripts_documentation/freeh/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    LAMMPS
+    freeh
   </span>
   
 
@@ -421,11 +487,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/molecule_lib_documentation/reference/" class="md-nav__link">
+      <a href="/dft_scripts_documentation/define_and_submit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    API Reference
+    automate define
   </span>
   
 
@@ -441,11 +507,91 @@
   
   
     <li class="md-nav__item">
-      <a href="/molecule_lib_documentation/todo/" class="md-nav__link">
+      <a href="/dft_scripts_documentation/vasp_thermo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Todo Page
+    vasp_thermo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/dft_scripts_documentation/read_control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    read_control
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/dft_scripts_documentation/vasp_energy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vasp_energy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/dft_scripts_documentation/squeue_scripts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    squeue
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/dft_scripts_documentation/todo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    todo
   </span>
   
 
@@ -565,10 +711,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/molecule_lib_documentation/", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.instant", "navigation.top", "navigation.tracking", "navigate.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "/molecule_lib_documentation/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "/dft_scripts_documentation/", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.instant", "navigation.top", "navigation.tracking", "navigate.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "/dft_scripts_documentation/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/molecule_lib_documentation/assets/javascripts/bundle.1e8ae164.min.js"></script>
+      <script src="/dft_scripts_documentation/assets/javascripts/bundle.1e8ae164.min.js"></script>
       
     
   </body>

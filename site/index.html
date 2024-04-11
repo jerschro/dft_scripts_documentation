@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Documentation of python library for manipulating molecular structures.">
+        <meta name="description" content="Documentation of dft scripts">
       
       
         <meta name="author" content="Jeremy Schroeder">
       
       
-        <link rel="canonical" href="https://jerschro.github.io/molecule_lib_documentation/">
+        <link rel="canonical" href="https://jerschro.github.io/dft_scripts_documentation/">
       
       
       
-        <link rel="next" href="read_functions/">
+        <link rel="next" href="turbo_dir/">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>molecule_lib Documentation</title>
+        <title>dft scripts documentation</title>
       
     
     
@@ -49,8 +49,6 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-    
-      <link rel="stylesheet" href="assets/_mkdocstrings.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#versionmodule-doc-string" class="md-skip">
+        <a href="#welcome-to-dft-scripts-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +92,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="molecule_lib Documentation" class="md-header__button md-logo" aria-label="molecule_lib Documentation" data-md-component="logo">
+    <a href="." title="dft scripts documentation" class="md-header__button md-logo" aria-label="dft scripts documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -108,13 +106,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            molecule_lib Documentation
+            dft scripts documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              home
             
           </span>
         </div>
@@ -137,7 +135,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
@@ -147,7 +145,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="orange" data-md-color-accent="lime"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
     
       <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
@@ -208,13 +206,13 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/jerschro/molecule_lib_documentation" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/jerschro/dft_scripts_documentation" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
-    jerschro/molecule_lib_documentation
+    jerschro/dft_scripts_documentation
   </div>
 </a>
       </div>
@@ -239,7 +237,7 @@
   
     
   
-  Home
+  home
 
       </a>
     </li>
@@ -251,12 +249,12 @@
   
   
     <li class="md-tabs__item">
-      <a href="read_functions/" class="md-tabs__link">
+      <a href="turbo_dir/" class="md-tabs__link">
         
   
     
   
-  Read Functions
+  turbo_dir
 
       </a>
     </li>
@@ -268,12 +266,12 @@
   
   
     <li class="md-tabs__item">
-      <a href="lammps/" class="md-tabs__link">
+      <a href="freeh/" class="md-tabs__link">
         
   
     
   
-  LAMMPS
+  freeh
 
       </a>
     </li>
@@ -285,12 +283,80 @@
   
   
     <li class="md-tabs__item">
-      <a href="reference/" class="md-tabs__link">
+      <a href="define_and_submit/" class="md-tabs__link">
         
   
     
   
-  API Reference
+  automate define
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="vasp_thermo/" class="md-tabs__link">
+        
+  
+    
+  
+  vasp_thermo
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="read_control/" class="md-tabs__link">
+        
+  
+    
+  
+  read_control
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="vasp_energy/" class="md-tabs__link">
+        
+  
+    
+  
+  vasp_energy
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="squeue_scripts/" class="md-tabs__link">
+        
+  
+    
+  
+  squeue
 
       </a>
     </li>
@@ -307,7 +373,7 @@
   
     
   
-  Todo Page
+  todo
 
       </a>
     </li>
@@ -342,23 +408,23 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="molecule_lib Documentation" class="md-nav__button md-logo" aria-label="molecule_lib Documentation" data-md-component="logo">
+    <a href="." title="dft scripts documentation" class="md-nav__button md-logo" aria-label="dft scripts documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    molecule_lib Documentation
+    dft scripts documentation
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/jerschro/molecule_lib_documentation" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/jerschro/dft_scripts_documentation" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
-    jerschro/molecule_lib_documentation
+    jerschro/dft_scripts_documentation
   </div>
 </a>
     </div>
@@ -378,119 +444,18 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Home
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="." class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Home
+    home
   </span>
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#versionmodule-doc-string" class="md-nav__link">
-    <span class="md-ellipsis">
-      Version/Module doc-string
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Version/Module doc-string">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#molecule_lib" class="md-nav__link">
-    <span class="md-ellipsis">
-      molecule_lib
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#molecule_lib.__version__" class="md-nav__link">
-    <span class="md-ellipsis">
-      __version__
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#molecule_lib.__version_tuple__" class="md-nav__link">
-    <span class="md-ellipsis">
-      __version_tuple__
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#welcome-to-molecule_lib-documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Welcome to molecule_lib Documentation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Welcome to molecule_lib Documentation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#to-install-molecule_lib" class="md-nav__link">
-    <span class="md-ellipsis">
-      To install molecule_lib
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#to-import-molecule_lib-into-python-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      To import molecule_lib into python code
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -503,11 +468,11 @@
   
   
     <li class="md-nav__item">
-      <a href="read_functions/" class="md-nav__link">
+      <a href="turbo_dir/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Read Functions
+    turbo_dir
   </span>
   
 
@@ -523,11 +488,11 @@
   
   
     <li class="md-nav__item">
-      <a href="lammps/" class="md-nav__link">
+      <a href="freeh/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    LAMMPS
+    freeh
   </span>
   
 
@@ -543,11 +508,91 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/" class="md-nav__link">
+      <a href="define_and_submit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    API Reference
+    automate define
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vasp_thermo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vasp_thermo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="read_control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    read_control
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vasp_energy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vasp_energy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="squeue_scripts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    squeue
   </span>
   
 
@@ -567,7 +612,7 @@
         
   
   <span class="md-ellipsis">
-    Todo Page
+    todo
   </span>
   
 
@@ -593,89 +638,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#versionmodule-doc-string" class="md-nav__link">
-    <span class="md-ellipsis">
-      Version/Module doc-string
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Version/Module doc-string">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#molecule_lib" class="md-nav__link">
-    <span class="md-ellipsis">
-      molecule_lib
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#molecule_lib.__version__" class="md-nav__link">
-    <span class="md-ellipsis">
-      __version__
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#molecule_lib.__version_tuple__" class="md-nav__link">
-    <span class="md-ellipsis">
-      __version_tuple__
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#welcome-to-molecule_lib-documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Welcome to molecule_lib Documentation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Welcome to molecule_lib Documentation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#to-install-molecule_lib" class="md-nav__link">
-    <span class="md-ellipsis">
-      To install molecule_lib
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#to-import-molecule_lib-into-python-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      To import molecule_lib into python code
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -693,86 +657,9 @@
   
 
 
-<h3 id="versionmodule-doc-string">Version/Module doc-string</h3>
-
-
-<div class="doc doc-object doc-module">
-
-
-
-<a id="molecule_lib"></a>
-  <div class="doc doc-contents first">
-
-  
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h4 id="molecule_lib.__version__" class="doc doc-heading">
-          <code class="highlight language-python"><span class="n">__version__</span> <span class="o">=</span> <span class="s1">&#39;4-9-2024-4&#39;</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
-  </span>
-
-</h4>
-
-
-  <div class="doc doc-contents ">
-  </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h4 id="molecule_lib.__version_tuple__" class="doc doc-heading">
-          <code class="highlight language-python"><span class="n">__version_tuple__</span> <span class="o">=</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">2024</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
-  </span>
-
-</h4>
-
-
-  <div class="doc doc-contents ">
-  </div>
-
-</div>
-
-
-
-
-
-  </div>
-
-  </div>
-
-</div><h1 id="welcome-to-molecule_lib-documentation">Welcome to molecule_lib Documentation</h1>
-<p>This is a library dedicated to manipulating and creating molecular structures using python for theoretical chemistry.
-Any feedback or bugs please email jerschro@ttu.edu or jeremynschroeder@gmail.com
-Created by Jeremy Schroeder © 2024</p>
-<h2 id="to-install-molecule_lib">To install molecule_lib</h2>
-<ul>
-<li>Copy source code into conda/lib/site-packages/molecule_lib or conda/envs/lib/site-packages/molecule_lib</li>
-<li>Have source code in folder molecule_lib located in repository where code you are importing molecule_lib</li>
-<li>(Not currently uploaded) <code>pip install molecule_lib</code> </li>
-<li>(Not currently uploaded) <code>conda install molecule_lib --channel conda-forge</code> </li>
-</ul>
-<h2 id="to-import-molecule_lib-into-python-code">To import molecule_lib into python code</h2>
-<p><code>python</code> 
-from molecule_lib import *</p>
+<h1 id="welcome-to-dft-scripts-documentation">Welcome to dft scripts documentation.</h1>
+<p>This is a documentation on how to use scripts written by jeremy schroeder.</p>
+<p>To request access to obtain scripts either email jeremy or find them in home/jerschro/Scripts/ directory on HPCC.</p>
 
 
 
@@ -811,13 +698,13 @@ from molecule_lib import *</p>
         
         
           
-          <a href="read_functions/" class="md-footer__link md-footer__link--next" aria-label="Next: Read Functions">
+          <a href="turbo_dir/" class="md-footer__link md-footer__link--next" aria-label="Next: turbo_dir">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Read Functions
+                turbo_dir
               </div>
             </div>
             <div class="md-footer__button md-icon">
