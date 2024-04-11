@@ -1,0 +1,46 @@
+https://jerschro.github.io/molecule_lib_documentation/
+https://jerschro.github.io/ttmole_documentation/
+
+command to run website
+ensure conda environment is running
+    " mkdocs serve "
+    or
+    " python -m mkdocs serve "
+
+required dependencies currently
+    mkdocs
+    mkdocstrings
+    mkdocs-material
+    mkdocstrings-python
+" conda install mkdocs mkdocstrings mkdocs-material mkdocstrings-python numpy --channel conda-forge "
+
+websites for documentation help
+https://mkdocstrings.github.io/usage/
+https://mkdocstrings.github.io/reference/extension/
+
+https://mkdocstrings.github.io/python/reference/mkdocstrings_handlers/python/handler/
+https://mkdocstrings.github.io/griffe/reference/griffe/docstrings/numpy/#griffe.docstrings.numpy
+https://numpydoc.readthedocs.io/en/latest/format.html
+
+https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/
+https://mkdocstrings.github.io/reference/handlers/base/
+
+https://mkdocstrings.github.io/griffe/docstrings/#numpydoc-style
+
+how to upload to github and create website
+git init -b main (in powershell in folder)
+in github desktop
+Click on current repository
+Click Add - Add Existing repository
+Commit (bottom left)
+
+Now generate mkdocs-ghdeploy
+
+How to update website:
+update git
+go to github.com/repo settings - pages - (next to visit site) 3 dots - unpublish site
+python3 -m mkdocs build
+python3 -m mkdocs gh-deploy
+go to actions in repo
+watch website get built
+navigate to updated website

@@ -1,0 +1,96 @@
+site_name: dft scripts Documentation
+site_url: https://jerschro.github.io/dft_scripts_documentation/
+site_author: Jeremy Schroeder
+site_description: Documentation of python library for manipulating molecular structures.
+repo_name: jerschro/dft_scripts_documentation
+repo_url: https://github.com/jerschro/dft_scripts_documentation
+
+nav:
+  - Home : index.md
+  - turbo_dir : turbo_dir.md
+  - freeh : freeh.md
+  - vasp_thermo : vasp_thermo.md
+  - read_control : read_control.md
+
+
+theme:
+  name: material
+  features:
+    - announce.dismiss
+    # - content.action.edit
+    # - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.footnote.tooltips
+    - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    # - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.instant
+    - navigation.top
+    - navigation.tracking
+    - navigate.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  language: en
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: orange
+      accent: purple
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: orange
+      accent: lime
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+plugins:
+  - search
+  # - mkdocstrings
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+extra:
+  social:
+    - icon: fontawesome/solid/envelope
+      link: mailto:jeremynschroeder@gmail.com
+    - icon: fontawesome/solid/t
+      link: https://www.depts.ttu.edu/me/combustionlab/
+    - icon: fontawesome/brands/github
+      link: https://github.com/jerschro
+
+copyright: |
+  &copy; 2024 Jeremy Schroeder
