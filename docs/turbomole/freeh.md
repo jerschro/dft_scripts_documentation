@@ -35,7 +35,45 @@ usage: CSV_freeh.sh [-h] CSV_FILENAME TSTART TEND NUMT [INDEX_INT_LIST (optional
 
 Script that submits a geometry optimization calculation when arguments are supplied.
 
+positional arguments:
+  CSV_FILENAME          Output .csv filename
+  TSTART                Integer of starting temperature value.
+  TEND                  Integer of ending temperature value.
+  NUMT                  Integer of amount of freeh values printed.
+  INDEX_INT_LIST        (optional) Default printout is all freeh values. Read description below to filter freeh .csv results.
+
+description of INDEX_INT_LIST:
+  INDEX_INT_LIST if provided, .csv file output will be filtered.
+  For example, if INDEX_INT_LIST = 0,17,6,13
+    The csv file output will be filtered to only contain these output values:
+      'T (K)' 'Total Energy freq (kJ/mol)' 'chem.pot. (kJ/mol)' 'enthalpy (kJ/mol)'
+    Instead of containing all of the freeh results.
+  freeh output value indexes:
+     0='T (K)'
+     1='P (MPa)'
+     2='ln (qtrans)'
+     3='ln (qrot)'
+     4='ln(qvib)'
+     5='chem.pot. (kJ/mol)'
+     6='energy (kJ/mol)'
+     7='entropy (kJ/mol/K)'
+     8=''
+     9='T (K)'
+    10='P (MPa)'
+    11='Cv (kJ/mol-K)'
+    12='Cp (kJ/mol-K)'
+    13='enthalpy (kJ/mol)'
+    14=''
+    15='T (K)'
+    16='Total Energy freq (au)'
+    17='Total Energy freq (kJ/mol)'
+    18=''
+
+options:
+  -h, --help            show this help message and exit.
+
 Written by Jeremy Schroeder 4-13-2024
+
 
 ```
 

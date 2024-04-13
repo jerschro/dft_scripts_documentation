@@ -8,9 +8,9 @@ repo_url: https://github.com/jerschro/dft_scripts_documentation
 nav:
   - Home : index.md
   - Turbomole : 
-    - Turbo Scripts : turbomole/index_turbomole.md
+    - Turbomole Scripts : turbomole/index_turbomole.md
     - turbo_dir : turbomole/turbo_dir.md
-    - freeh scripts : turbomole/freeh.md
+    - freeh : turbomole/freeh.md
     - geo_opt : turbomole/define_and_submit.md
     - read_control : turbomole/read_control.md
   - VASP :

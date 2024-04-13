@@ -26,7 +26,7 @@
     
     
       
-        <title>freeh scripts - dft scripts documentation</title>
+        <title>freeh - dft scripts documentation</title>
       
     
     
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              freeh scripts
+              freeh
             
           </span>
         </div>
@@ -471,7 +471,7 @@
         
   
   <span class="md-ellipsis">
-    Turbo Scripts
+    Turbomole Scripts
   </span>
   
 
@@ -520,7 +520,7 @@
           
   
   <span class="md-ellipsis">
-    freeh scripts
+    freeh
   </span>
   
 
@@ -531,7 +531,7 @@
         
   
   <span class="md-ellipsis">
-    freeh scripts
+    freeh
   </span>
   
 
@@ -1129,7 +1129,7 @@
   
 
 
-  <h1>freeh scripts</h1>
+  <h1>freeh</h1>
 
 <h2 id="auto_freehsh">auto_freeh.sh</h2>
 <h3 id="auto_freehsh-path">auto_freeh.sh path</h3>
@@ -1151,7 +1151,44 @@
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Script that submits a geometry optimization calculation when arguments are supplied.
 </span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>Written by Jeremy Schroeder 4-13-2024
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>positional arguments:
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>  CSV_FILENAME          Output .csv filename
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>  TSTART                Integer of starting temperature value.
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>  TEND                  Integer of ending temperature value.
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>  NUMT                  Integer of amount of freeh values printed.
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>  INDEX_INT_LIST        (optional) Default printout is all freeh values. Read description below to filter freeh .csv results.
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>description of INDEX_INT_LIST:
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>  INDEX_INT_LIST if provided, .csv file output will be filtered.
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>  For example, if INDEX_INT_LIST = 0,17,6,13
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    The csv file output will be filtered to only contain these output values:
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>      &#39;T (K)&#39; &#39;Total Energy freq (kJ/mol)&#39; &#39;chem.pot. (kJ/mol)&#39; &#39;enthalpy (kJ/mol)&#39;
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>    Instead of containing all of the freeh results.
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>  freeh output value indexes:
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>     0=&#39;T (K)&#39;
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>     1=&#39;P (MPa)&#39;
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>     2=&#39;ln (qtrans)&#39;
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>     3=&#39;ln (qrot)&#39;
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>     4=&#39;ln(qvib)&#39;
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>     5=&#39;chem.pot. (kJ/mol)&#39;
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>     6=&#39;energy (kJ/mol)&#39;
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>     7=&#39;entropy (kJ/mol/K)&#39;
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>     8=&#39;&#39;
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>     9=&#39;T (K)&#39;
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>    10=&#39;P (MPa)&#39;
+</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>    11=&#39;Cv (kJ/mol-K)&#39;
+</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>    12=&#39;Cp (kJ/mol-K)&#39;
+</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>    13=&#39;enthalpy (kJ/mol)&#39;
+</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>    14=&#39;&#39;
+</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>    15=&#39;T (K)&#39;
+</span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>    16=&#39;Total Energy freq (au)&#39;
+</span><span id="__span-3-36"><a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>    17=&#39;Total Energy freq (kJ/mol)&#39;
+</span><span id="__span-3-37"><a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>    18=&#39;&#39;
+</span><span id="__span-3-38"><a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a>
+</span><span id="__span-3-39"><a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>options:
+</span><span id="__span-3-40"><a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a>  -h, --help            show this help message and exit.
+</span><span id="__span-3-41"><a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a>
+</span><span id="__span-3-42"><a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a>Written by Jeremy Schroeder 4-13-2024
 </span></code></pre></div>
 <h3 id="csv_freehsh-example-output">CSV_freeh.sh Example Output</h3>
 <div class="language-text highlight"><span class="filename">CSV_thermo.csv Example Usage</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>bash CSV_thermo.csv example_output.csv 250 500 6
