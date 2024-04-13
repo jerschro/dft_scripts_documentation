@@ -6,14 +6,24 @@ repo_name: jerschro/dft_scripts_documentation
 repo_url: https://github.com/jerschro/dft_scripts_documentation
 
 nav:
-  - home : index.md
-  - turbo_dir : turbo_dir.md
-  - freeh : freeh.md
-  - automate define : define_and_submit.md
-  - vasp_thermo : vasp_thermo.md
-  - read_control : read_control.md
-  - vasp_energy : vasp_energy.md
-  - squeue : squeue_scripts.md
+  - Home : index.md
+  - Turbomole : 
+    - Turbo Scripts : turbomole/index_turbomole.md
+    - turbo_dir : turbomole/turbo_dir.md
+    - freeh scripts : turbomole/freeh.md
+    - geo_opt : turbomole/define_and_submit.md
+    - read_control : turbomole/read_control.md
+  - VASP :
+    - VASP Scripts : vasp/index_vasp.md
+    - vasp_energy : vasp/vasp_energy.md
+    - vasp_thermo : vasp/vasp_thermo.md
+  - HPCC :
+    - HPCC Scripts : hpcc/index_hpcc.md
+    - squeue : hpcc/squeue_scripts.md
+    - chmod : hpcc/chmod.md
+  - Misc :
+    - Misc Scripts : misc/index_misc.md
+    - combine csv files : misc/combine_csv_files.md
   - todo : todo.md
 
 
@@ -77,7 +87,22 @@ theme:
 plugins:
   - search
   # - mkdocstrings
-
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: false
+      caption_position: bottom
+      background: white
+      shadow: true
+      
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true

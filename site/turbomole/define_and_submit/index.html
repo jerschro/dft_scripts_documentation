@@ -12,22 +12,28 @@
         <meta name="author" content="Jeremy Schroeder">
       
       
+        <link rel="canonical" href="https://jerschro.github.io/dft_scripts_documentation/turbomole/define_and_submit/">
       
       
+        <link rel="prev" href="../freeh/">
       
-      <link rel="icon" href="/dft_scripts_documentation/assets/images/favicon.png">
+      
+        <link rel="next" href="../read_control/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.14">
     
     
       
-        <title>dft scripts documentation</title>
+        <title>geo_opt - dft scripts documentation</title>
       
     
     
-      <link rel="stylesheet" href="/dft_scripts_documentation/assets/stylesheets/main.10ba22f1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.10ba22f1.min.css">
       
         
-        <link rel="stylesheet" href="/dft_scripts_documentation/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,14 +52,23 @@
       
     
     
-    <script>__md_scope=new URL("/dft_scripts_documentation/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -71,6 +86,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#alias-for-hpcc" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -83,7 +103,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/dft_scripts_documentation/." title="dft scripts documentation" class="md-header__button md-logo" aria-label="dft scripts documentation" data-md-component="logo">
+    <a href="../.." title="dft scripts documentation" class="md-header__button md-logo" aria-label="dft scripts documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -103,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              geo_opt
             
           </span>
         </div>
@@ -221,7 +241,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/dft_scripts_documentation/." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -236,11 +256,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/dft_scripts_documentation/turbomole/index_turbomole/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../index_turbomole/" class="md-tabs__link">
           
   
   Turbomole
@@ -258,7 +280,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/dft_scripts_documentation/vasp/index_vasp/" class="md-tabs__link">
+        <a href="../../vasp/index_vasp/" class="md-tabs__link">
           
   
   VASP
@@ -276,7 +298,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/dft_scripts_documentation/hpcc/index_hpcc/" class="md-tabs__link">
+        <a href="../../hpcc/index_hpcc/" class="md-tabs__link">
           
   
   HPCC
@@ -294,7 +316,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/dft_scripts_documentation/misc/index_misc/" class="md-tabs__link">
+        <a href="../../misc/index_misc/" class="md-tabs__link">
           
   
   Misc
@@ -310,7 +332,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/dft_scripts_documentation/todo/" class="md-tabs__link">
+      <a href="../../todo/" class="md-tabs__link">
         
   
     
@@ -350,7 +372,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/dft_scripts_documentation/." title="dft scripts documentation" class="md-nav__button md-logo" aria-label="dft scripts documentation" data-md-component="logo">
+    <a href="../.." title="dft scripts documentation" class="md-nav__button md-logo" aria-label="dft scripts documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -380,7 +402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -397,25 +419,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -426,7 +453,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Turbomole
@@ -440,7 +467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/turbomole/index_turbomole/" class="md-nav__link">
+      <a href="../index_turbomole/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -461,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/turbomole/turbo_dir/" class="md-nav__link">
+      <a href="../turbo_dir/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -482,7 +509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/turbomole/freeh/" class="md-nav__link">
+      <a href="../freeh/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -500,10 +527,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/turbomole/define_and_submit/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    geo_opt
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -512,6 +557,42 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#alias-for-hpcc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alias for HPCC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description-of-geo_opt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description of geo_opt
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -524,7 +605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/turbomole/read_control/" class="md-nav__link">
+      <a href="../read_control/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -592,7 +673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/vasp/index_vasp/" class="md-nav__link">
+      <a href="../../vasp/index_vasp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -613,7 +694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/vasp/vasp_energy/" class="md-nav__link">
+      <a href="../../vasp/vasp_energy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -634,7 +715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/vasp/vasp_thermo/" class="md-nav__link">
+      <a href="../../vasp/vasp_thermo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -702,7 +783,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/hpcc/index_hpcc/" class="md-nav__link">
+      <a href="../../hpcc/index_hpcc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -723,7 +804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/hpcc/squeue_scripts/" class="md-nav__link">
+      <a href="../../hpcc/squeue_scripts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -744,7 +825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/hpcc/chmod/" class="md-nav__link">
+      <a href="../../hpcc/chmod/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -812,7 +893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/misc/index_misc/" class="md-nav__link">
+      <a href="../../misc/index_misc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -833,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/misc/combine_csv_files/" class="md-nav__link">
+      <a href="../../misc/combine_csv_files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -861,7 +942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/todo/" class="md-nav__link">
+      <a href="../../todo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -892,6 +973,32 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#alias-for-hpcc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alias for HPCC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description-of-geo_opt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description of geo_opt
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -902,8 +1009,37 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+  <h1>geo_opt</h1>
+
+<h2 id="alias-for-hpcc">Alias for HPCC</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">geo_opt</span><span class="o">=</span><span class="s1">&#39;bash /home/jerschro/Scripts/turbomole/run_define_and_submit_job.sh&#39;</span>
+</span></code></pre></div>
+<h2 id="description-of-geo_opt">Description of geo_opt</h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>usage: geo_opt [-h] STRUCTURE_FILEPATH JOB_NAME BASIS_SET CHARGE DFT_FUNCTIONAL SCF_CONV
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Script that submits a geometry optimization calculation when arguments are supplied.
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>Written by Jeremy Schroeder 4-12-2024
+</span></code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -923,6 +1059,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../freeh/" class="md-footer__link md-footer__link--prev" aria-label="Previous: freeh scripts">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                freeh scripts
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../read_control/" class="md-footer__link md-footer__link--next" aria-label="Next: read_control">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                read_control
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -985,11 +1159,11 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/dft_scripts_documentation/", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.instant", "navigation.top", "navigation.tracking", "navigate.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "/dft_scripts_documentation/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.instant", "navigation.top", "navigation.tracking", "navigate.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/dft_scripts_documentation/assets/javascripts/bundle.bd41221c.min.js"></script>
+      <script src="../../assets/javascripts/bundle.bd41221c.min.js"></script>
       
     
-  </body>
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

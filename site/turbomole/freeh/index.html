@@ -12,22 +12,28 @@
         <meta name="author" content="Jeremy Schroeder">
       
       
+        <link rel="canonical" href="https://jerschro.github.io/dft_scripts_documentation/turbomole/freeh/">
       
       
+        <link rel="prev" href="../turbo_dir/">
       
-      <link rel="icon" href="/dft_scripts_documentation/assets/images/favicon.png">
+      
+        <link rel="next" href="../define_and_submit/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.14">
     
     
       
-        <title>dft scripts documentation</title>
+        <title>freeh scripts - dft scripts documentation</title>
       
     
     
-      <link rel="stylesheet" href="/dft_scripts_documentation/assets/stylesheets/main.10ba22f1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.10ba22f1.min.css">
       
         
-        <link rel="stylesheet" href="/dft_scripts_documentation/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,14 +52,23 @@
       
     
     
-    <script>__md_scope=new URL("/dft_scripts_documentation/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -71,6 +86,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#auto_freehsh" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -83,7 +103,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/dft_scripts_documentation/." title="dft scripts documentation" class="md-header__button md-logo" aria-label="dft scripts documentation" data-md-component="logo">
+    <a href="../.." title="dft scripts documentation" class="md-header__button md-logo" aria-label="dft scripts documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -103,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              freeh scripts
             
           </span>
         </div>
@@ -221,7 +241,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/dft_scripts_documentation/." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -236,11 +256,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/dft_scripts_documentation/turbomole/index_turbomole/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../index_turbomole/" class="md-tabs__link">
           
   
   Turbomole
@@ -258,7 +280,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/dft_scripts_documentation/vasp/index_vasp/" class="md-tabs__link">
+        <a href="../../vasp/index_vasp/" class="md-tabs__link">
           
   
   VASP
@@ -276,7 +298,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/dft_scripts_documentation/hpcc/index_hpcc/" class="md-tabs__link">
+        <a href="../../hpcc/index_hpcc/" class="md-tabs__link">
           
   
   HPCC
@@ -294,7 +316,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/dft_scripts_documentation/misc/index_misc/" class="md-tabs__link">
+        <a href="../../misc/index_misc/" class="md-tabs__link">
           
   
   Misc
@@ -310,7 +332,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/dft_scripts_documentation/todo/" class="md-tabs__link">
+      <a href="../../todo/" class="md-tabs__link">
         
   
     
@@ -350,7 +372,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/dft_scripts_documentation/." title="dft scripts documentation" class="md-nav__button md-logo" aria-label="dft scripts documentation" data-md-component="logo">
+    <a href="../.." title="dft scripts documentation" class="md-nav__button md-logo" aria-label="dft scripts documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -380,7 +402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -397,25 +419,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -426,7 +453,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Turbomole
@@ -440,7 +467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/turbomole/index_turbomole/" class="md-nav__link">
+      <a href="../index_turbomole/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -461,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/turbomole/turbo_dir/" class="md-nav__link">
+      <a href="../turbo_dir/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -479,10 +506,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/turbomole/freeh/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    freeh scripts
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -491,6 +536,99 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#auto_freehsh" class="md-nav__link">
+    <span class="md-ellipsis">
+      auto_freeh.sh
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="auto_freeh.sh">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auto_freehsh-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      auto_freeh.sh path
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto_freehsh-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      auto_freeh.sh Description
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#csv_thermosh" class="md-nav__link">
+    <span class="md-ellipsis">
+      CSV_thermo.sh
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CSV_thermo.sh">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#csv_freehsh-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      CSV_freeh.sh path
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csv_freehsh-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      CSV_freeh.sh Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csv_freehsh-example-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      CSV_freeh.sh Example Output
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -503,7 +641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/turbomole/define_and_submit/" class="md-nav__link">
+      <a href="../define_and_submit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -524,7 +662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/turbomole/read_control/" class="md-nav__link">
+      <a href="../read_control/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -592,7 +730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/vasp/index_vasp/" class="md-nav__link">
+      <a href="../../vasp/index_vasp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -613,7 +751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/vasp/vasp_energy/" class="md-nav__link">
+      <a href="../../vasp/vasp_energy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -634,7 +772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/vasp/vasp_thermo/" class="md-nav__link">
+      <a href="../../vasp/vasp_thermo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -702,7 +840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/hpcc/index_hpcc/" class="md-nav__link">
+      <a href="../../hpcc/index_hpcc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -723,7 +861,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/hpcc/squeue_scripts/" class="md-nav__link">
+      <a href="../../hpcc/squeue_scripts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -744,7 +882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/hpcc/chmod/" class="md-nav__link">
+      <a href="../../hpcc/chmod/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -812,7 +950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/misc/index_misc/" class="md-nav__link">
+      <a href="../../misc/index_misc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -833,7 +971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/misc/combine_csv_files/" class="md-nav__link">
+      <a href="../../misc/combine_csv_files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -861,7 +999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/todo/" class="md-nav__link">
+      <a href="../../todo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -892,6 +1030,89 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#auto_freehsh" class="md-nav__link">
+    <span class="md-ellipsis">
+      auto_freeh.sh
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="auto_freeh.sh">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auto_freehsh-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      auto_freeh.sh path
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto_freehsh-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      auto_freeh.sh Description
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#csv_thermosh" class="md-nav__link">
+    <span class="md-ellipsis">
+      CSV_thermo.sh
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CSV_thermo.sh">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#csv_freehsh-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      CSV_freeh.sh path
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csv_freehsh-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      CSV_freeh.sh Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csv_freehsh-example-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      CSV_freeh.sh Example Output
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -902,8 +1123,198 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+  <h1>freeh scripts</h1>
+
+<h2 id="auto_freehsh">auto_freeh.sh</h2>
+<h3 id="auto_freehsh-path">auto_freeh.sh path</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cp<span class="w"> </span>/home/jerschro/Scripts/turbomole/freeh/auto_freeh.sh<span class="w"> </span>.
+</span></code></pre></div>
+<h3 id="auto_freehsh-description">auto_freeh.sh Description</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>usage: auto_freeh.sh [-h]
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Shell for automating CSV_freeh.sh in multiple turbomole frequency directories.
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>Written by Jeremy Schroeder 4-13-2024
+</span></code></pre></div>
+<h2 id="csv_thermosh">CSV_thermo.sh</h2>
+<h3 id="csv_freehsh-path">CSV_freeh.sh path</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>cp<span class="w"> </span>/home/jerschro/Scripts/turbomole/freeh/CSV_freeh.sh<span class="w"> </span>.
+</span></code></pre></div>
+<h3 id="csv_freehsh-description">CSV_freeh.sh Description</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>usage: CSV_freeh.sh [-h] CSV_FILENAME TSTART TEND NUMT [INDEX_INT_LIST (optional)]
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Script that submits a geometry optimization calculation when arguments are supplied.
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>Written by Jeremy Schroeder 4-13-2024
+</span></code></pre></div>
+<h3 id="csv_freehsh-example-output">CSV_freeh.sh Example Output</h3>
+<div class="language-text highlight"><span class="filename">CSV_thermo.csv Example Usage</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>bash CSV_thermo.csv example_output.csv 250 500 6
+</span></code></pre></div>
+<details>
+<summary>example_output.csv File</summary>
+
+<div class="language-text highlight"><span class="filename">example_output.csv</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>T (K),P (MPa),ln (qtrans),ln (qrot),ln(qvib),chem.pot. (kJ/mol),energy (kJ/mol),entropy (kJ/mol/K),,T (K),P (MPa),Cv (kJ/mol-K),Cp (kJ/mol-K),enthalpy (kJ/mol),,T (K),Total Energy freq (au),Total Energy freq (kJ/mol),
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>250.00,0.1000000,17.31,12.03,1.70,92.18,169.12,0.31610,,250.00,0.1000000,0.0827033,0.0910176,171.20,,250.00,-817.52609110919,-2146414.7522071786,
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>300.00,0.1000000,17.77,12.31,2.31,75.93,173.53,0.33366,,300.00,0.1000000,0.0934691,0.1017834,176.03,,300.00,-817.52609110919,-2146414.7522071786,
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>350.00,0.1000000,18.15,12.54,2.95,58.83,178.45,0.35008,,350.00,0.1000000,0.1030149,0.1113292,181.36,,350.00,-817.52609110919,-2146414.7522071786,
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>400.00,0.1000000,18.49,12.74,3.59,40.94,183.82,0.36552,,400.00,0.1000000,0.1115332,0.1198475,187.14,,400.00,-817.52609110919,-2146414.7522071786,
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>450.00,0.1000000,18.78,12.92,4.23,22.29,189.59,0.38008,,450.00,0.1000000,0.1191343,0.1274486,193.33,,450.00,-817.52609110919,-2146414.7522071786,
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>500.00,0.1000000,19.05,13.07,4.87,2.94,195.72,0.39387,,500.00,0.1000000,0.1259088,0.1342231,199.87,,500.00,-817.52609110919,-2146414.7522071786,
+</span></code></pre></div>
+</details>
+
+<p>example_output.csv Table</p>
+<table>
+<thead>
+<tr>
+<th>T (K)</th>
+<th>P (MPa)</th>
+<th>ln (qtrans)</th>
+<th>ln (qrot)</th>
+<th>ln(qvib)</th>
+<th>chem.pot. (kJ/mol)</th>
+<th>energy (kJ/mol)</th>
+<th>entropy (kJ/mol/K)</th>
+<th>T (K)</th>
+<th>P (MPa)</th>
+<th>Cv (kJ/mol-K)</th>
+<th>Cp (kJ/mol-K)</th>
+<th>enthalpy (kJ/mol)</th>
+<th>T (K)</th>
+<th>Total Energy freq (au)</th>
+<th>Total Energy freq (kJ/mol)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>250.00</td>
+<td>0.1000000</td>
+<td>17.31</td>
+<td>12.03</td>
+<td>1.70</td>
+<td>92.18</td>
+<td>169.12</td>
+<td>0.31610</td>
+<td>250.00</td>
+<td>0.1000000</td>
+<td>0.0827033</td>
+<td>0.0910176</td>
+<td>171.20</td>
+<td>250.00</td>
+<td>-817.52609110919</td>
+<td>-2146414.7522071786</td>
+</tr>
+<tr>
+<td>300.00</td>
+<td>0.1000000</td>
+<td>17.77</td>
+<td>12.31</td>
+<td>2.31</td>
+<td>75.93</td>
+<td>173.53</td>
+<td>0.33366</td>
+<td>300.00</td>
+<td>0.1000000</td>
+<td>0.0934691</td>
+<td>0.1017834</td>
+<td>176.03</td>
+<td>300.00</td>
+<td>-817.52609110919</td>
+<td>-2146414.7522071786</td>
+</tr>
+<tr>
+<td>350.00</td>
+<td>0.1000000</td>
+<td>18.15</td>
+<td>12.54</td>
+<td>2.95</td>
+<td>58.83</td>
+<td>178.45</td>
+<td>0.35008</td>
+<td>350.00</td>
+<td>0.1000000</td>
+<td>0.1030149</td>
+<td>0.1113292</td>
+<td>181.36</td>
+<td>350.00</td>
+<td>-817.52609110919</td>
+<td>-2146414.7522071786</td>
+</tr>
+<tr>
+<td>400.00</td>
+<td>0.1000000</td>
+<td>18.49</td>
+<td>12.74</td>
+<td>3.59</td>
+<td>40.94</td>
+<td>183.82</td>
+<td>0.36552</td>
+<td>400.00</td>
+<td>0.1000000</td>
+<td>0.1115332</td>
+<td>0.1198475</td>
+<td>187.14</td>
+<td>400.00</td>
+<td>-817.52609110919</td>
+<td>-2146414.7522071786</td>
+</tr>
+<tr>
+<td>450.00</td>
+<td>0.1000000</td>
+<td>18.78</td>
+<td>12.92</td>
+<td>4.23</td>
+<td>22.29</td>
+<td>189.59</td>
+<td>0.38008</td>
+<td>450.00</td>
+<td>0.1000000</td>
+<td>0.1191343</td>
+<td>0.1274486</td>
+<td>193.33</td>
+<td>450.00</td>
+<td>-817.52609110919</td>
+<td>-2146414.7522071786</td>
+</tr>
+<tr>
+<td>500.00</td>
+<td>0.1000000</td>
+<td>19.05</td>
+<td>13.07</td>
+<td>4.87</td>
+<td>2.94</td>
+<td>195.72</td>
+<td>0.39387</td>
+<td>500.00</td>
+<td>0.1000000</td>
+<td>0.1259088</td>
+<td>0.1342231</td>
+<td>199.87</td>
+<td>500.00</td>
+<td>-817.52609110919</td>
+<td>-2146414.7522071786</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -923,6 +1334,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../turbo_dir/" class="md-footer__link md-footer__link--prev" aria-label="Previous: turbo_dir">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                turbo_dir
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../define_and_submit/" class="md-footer__link md-footer__link--next" aria-label="Next: geo_opt">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                geo_opt
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -985,11 +1434,11 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/dft_scripts_documentation/", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.instant", "navigation.top", "navigation.tracking", "navigate.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "/dft_scripts_documentation/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.instant", "navigation.top", "navigation.tracking", "navigate.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/dft_scripts_documentation/assets/javascripts/bundle.bd41221c.min.js"></script>
+      <script src="../../assets/javascripts/bundle.bd41221c.min.js"></script>
       
     
-  </body>
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
