@@ -12,22 +12,28 @@
         <meta name="author" content="Jeremy Schroeder">
       
       
+        <link rel="canonical" href="https://jerschro.github.io/dft_scripts_documentation/hpcc/chmod/">
       
       
+        <link rel="prev" href="../squeue_scripts/">
       
-      <link rel="icon" href="/dft_scripts_documentation/assets/images/favicon.png">
+      
+        <link rel="next" href="../../misc/index_misc/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.14">
     
     
       
-        <title>dft scripts documentation</title>
+        <title>chmod - dft scripts documentation</title>
       
     
     
-      <link rel="stylesheet" href="/dft_scripts_documentation/assets/stylesheets/main.10ba22f1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.10ba22f1.min.css">
       
         
-        <link rel="stylesheet" href="/dft_scripts_documentation/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,14 +52,23 @@
       
     
     
-    <script>__md_scope=new URL("/dft_scripts_documentation/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -71,6 +86,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#file-permissions-notes" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -83,7 +103,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/dft_scripts_documentation/." title="dft scripts documentation" class="md-header__button md-logo" aria-label="dft scripts documentation" data-md-component="logo">
+    <a href="../.." title="dft scripts documentation" class="md-header__button md-logo" aria-label="dft scripts documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -103,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              chmod
             
           </span>
         </div>
@@ -221,7 +241,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/dft_scripts_documentation/." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -240,7 +260,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/dft_scripts_documentation/turbomole/index_turbomole/" class="md-tabs__link">
+        <a href="../../turbomole/index_turbomole/" class="md-tabs__link">
           
   
   Turbomole
@@ -258,7 +278,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/dft_scripts_documentation/vasp/index_vasp/" class="md-tabs__link">
+        <a href="../../vasp/index_vasp/" class="md-tabs__link">
           
   
   VASP
@@ -272,11 +292,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/dft_scripts_documentation/hpcc/index_hpcc/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../index_hpcc/" class="md-tabs__link">
           
   
   HPCC
@@ -294,7 +316,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/dft_scripts_documentation/misc/index_misc/" class="md-tabs__link">
+        <a href="../../misc/index_misc/" class="md-tabs__link">
           
   
   Misc
@@ -310,7 +332,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/dft_scripts_documentation/todo/" class="md-tabs__link">
+      <a href="../../todo/" class="md-tabs__link">
         
   
     
@@ -350,7 +372,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/dft_scripts_documentation/." title="dft scripts documentation" class="md-nav__button md-logo" aria-label="dft scripts documentation" data-md-component="logo">
+    <a href="../.." title="dft scripts documentation" class="md-nav__button md-logo" aria-label="dft scripts documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -380,7 +402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -440,7 +462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/turbomole/index_turbomole/" class="md-nav__link">
+      <a href="../../turbomole/index_turbomole/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -461,7 +483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/turbomole/turbo_dir/" class="md-nav__link">
+      <a href="../../turbomole/turbo_dir/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -482,7 +504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/turbomole/freeh/" class="md-nav__link">
+      <a href="../../turbomole/freeh/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -503,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/turbomole/define_and_submit/" class="md-nav__link">
+      <a href="../../turbomole/define_and_submit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -524,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/turbomole/read_control/" class="md-nav__link">
+      <a href="../../turbomole/read_control/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -592,7 +614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/vasp/index_vasp/" class="md-nav__link">
+      <a href="../../vasp/index_vasp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -613,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/vasp/vasp_energy/" class="md-nav__link">
+      <a href="../../vasp/vasp_energy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -634,7 +656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/vasp/vasp_thermo/" class="md-nav__link">
+      <a href="../../vasp/vasp_thermo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -659,25 +681,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -688,7 +715,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             HPCC
@@ -702,7 +729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/hpcc/index_hpcc/" class="md-nav__link">
+      <a href="../index_hpcc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -723,7 +750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/hpcc/squeue_scripts/" class="md-nav__link">
+      <a href="../squeue_scripts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -741,10 +768,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/hpcc/chmod/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    chmod
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -753,6 +798,99 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#file-permissions-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Permissions Notes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fix_sshsh" class="md-nav__link">
+    <span class="md-ellipsis">
+      fix_ssh.sh
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="fix_ssh.sh">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fix_sshsh-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      fix_ssh.sh path
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fix_ssh-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      fix_ssh Description
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modify_filessh" class="md-nav__link">
+    <span class="md-ellipsis">
+      modify_files.sh
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="modify_files.sh">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modify_filessh-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      modify_files.sh path
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modify_files-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      modify_files Description
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -812,7 +950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/misc/index_misc/" class="md-nav__link">
+      <a href="../../misc/index_misc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -833,7 +971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/misc/combine_csv_files/" class="md-nav__link">
+      <a href="../../misc/combine_csv_files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -861,7 +999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dft_scripts_documentation/todo/" class="md-nav__link">
+      <a href="../../todo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -892,6 +1030,89 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#file-permissions-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Permissions Notes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fix_sshsh" class="md-nav__link">
+    <span class="md-ellipsis">
+      fix_ssh.sh
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="fix_ssh.sh">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fix_sshsh-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      fix_ssh.sh path
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fix_ssh-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      fix_ssh Description
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modify_filessh" class="md-nav__link">
+    <span class="md-ellipsis">
+      modify_files.sh
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="modify_files.sh">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modify_filessh-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      modify_files.sh path
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modify_files-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      modify_files Description
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -902,8 +1123,60 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+  <h1>chmod</h1>
+
+<h2 id="file-permissions-notes">File Permissions Notes</h2>
+<div class="language-text highlight"><span class="filename">/home/jerschro/Scripts/chmod/README</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>How your files should be set up to read
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>First run commands in home directory:
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>setfacl -R -m g::r-x /home/eraider
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>setfacl -R -m g:ME:r-x /home/eraider
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>setfacl -R -m g:chem:r-x /home/eraider
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>Then run fix_ssh.sh to fix the .ssh directory
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>Then run modify_files.sh to turn all files not executable (.sh) to read only.
+</span></code></pre></div>
+<h2 id="fix_sshsh">fix_ssh.sh</h2>
+<h3 id="fix_sshsh-path">fix_ssh.sh path</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>cp<span class="w"> </span>/home/jerschro/Scripts/chmod/fix_ssh.sh<span class="w"> </span>.
+</span></code></pre></div>
+<h3 id="fix_ssh-description">fix_ssh Description</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>usage: fix_ssh.sh [-h]
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Fixes file permissions in .ssh folder. Script is meant to be run in home directory.
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>Written by Jeremy Schroeder 2-20-2024
+</span></code></pre></div>
+<h2 id="modify_filessh">modify_files.sh</h2>
+<h3 id="modify_filessh-path">modify_files.sh path</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>cp<span class="w"> </span>/home/jerschro/Scripts/chmod/modify_files.sh<span class="w"> </span>.
+</span></code></pre></div>
+<h3 id="modify_files-description">modify_files Description</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>usage: modify_files.sh [-h]
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>Recursive script that reads all sub directories and fixes file permissions to all text files and executable scripts.
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>Written by Jeremy Schroeder 2-20-2024
+</span></code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -923,6 +1196,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../squeue_scripts/" class="md-footer__link md-footer__link--prev" aria-label="Previous: squeue">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                squeue
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../misc/index_misc/" class="md-footer__link md-footer__link--next" aria-label="Next: Misc Scripts">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Misc Scripts
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -985,11 +1296,11 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/dft_scripts_documentation/", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.instant", "navigation.top", "navigation.tracking", "navigate.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "/dft_scripts_documentation/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.instant", "navigation.top", "navigation.tracking", "navigate.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/dft_scripts_documentation/assets/javascripts/bundle.bd41221c.min.js"></script>
+      <script src="../../assets/javascripts/bundle.bd41221c.min.js"></script>
       
     
-  </body>
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
