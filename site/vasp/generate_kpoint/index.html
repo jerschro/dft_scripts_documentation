@@ -12,13 +12,13 @@
         <meta name="author" content="Jeremy Schroeder">
       
       
-        <link rel="canonical" href="https://jerschro.github.io/dft_scripts_documentation/hpcc/chmod/">
+        <link rel="canonical" href="https://jerschro.github.io/dft_scripts_documentation/vasp/generate_kpoint/">
       
       
-        <link rel="prev" href="../squeue_scripts/">
+        <link rel="prev" href="../vasp_thermo/">
       
       
-        <link rel="next" href="../../misc/index_misc/">
+        <link rel="next" href="../../hpcc/index_hpcc/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>chmod - dft scripts documentation</title>
+        <title>generate_kpoint_test - dft scripts documentation</title>
       
     
     
@@ -87,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#file-permissions-notes" class="md-skip">
+        <a href="#generate_kpoint_testsh-path" class="md-skip">
           Skip to content
         </a>
       
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              chmod
+              generate_kpoint_test
             
           </span>
         </div>
@@ -274,11 +274,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../vasp/index_vasp/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../index_vasp/" class="md-tabs__link">
           
   
   VASP
@@ -292,13 +294,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../index_hpcc/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../hpcc/index_hpcc/" class="md-tabs__link">
           
   
   HPCC
@@ -571,137 +571,6 @@
       
   
   
-  
-  
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    VASP
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            VASP
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../vasp/index_vasp/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    VASP Scripts
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../vasp/vasp_energy/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    vasp_energy
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../vasp/vasp_thermo/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    vasp_thermo
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../vasp/generate_kpoint/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    generate_kpoint_test
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -722,24 +591,24 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
-    HPCC
+    VASP
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            HPCC
+            VASP
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -750,11 +619,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../index_hpcc/" class="md-nav__link">
+      <a href="../index_vasp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    HPCC Scripts
+    VASP Scripts
   </span>
   
 
@@ -771,11 +640,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../squeue_scripts/" class="md-nav__link">
+      <a href="../vasp_energy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    squeue
+    vasp_energy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vasp_thermo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vasp_thermo
   </span>
   
 
@@ -803,7 +693,7 @@
           
   
   <span class="md-ellipsis">
-    chmod
+    generate_kpoint_test
   </span>
   
 
@@ -814,7 +704,7 @@
         
   
   <span class="md-ellipsis">
-    chmod
+    generate_kpoint_test
   </span>
   
 
@@ -834,77 +724,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#file-permissions-notes" class="md-nav__link">
+  <a href="#generate_kpoint_testsh-path" class="md-nav__link">
     <span class="md-ellipsis">
-      File Permissions Notes
+      generate_kpoint_test.sh path
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#fix_sshsh" class="md-nav__link">
+  <a href="#generate_kpoint_testsh-description" class="md-nav__link">
     <span class="md-ellipsis">
-      fix_ssh.sh
+      generate_kpoint_test.sh Description
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="fix_ssh.sh">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#fix_sshsh-path" class="md-nav__link">
-    <span class="md-ellipsis">
-      fix_ssh.sh path
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fix_ssh-description" class="md-nav__link">
-    <span class="md-ellipsis">
-      fix_ssh Description
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modify_filessh" class="md-nav__link">
+  <a href="#generate_kpoint_testsh-example-usage" class="md-nav__link">
     <span class="md-ellipsis">
-      modify_files.sh
+      generate_kpoint_test.sh Example Usage
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="modify_files.sh">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#modify_filessh-path" class="md-nav__link">
-    <span class="md-ellipsis">
-      modify_files.sh path
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modify_files-description" class="md-nav__link">
-    <span class="md-ellipsis">
-      modify_files Description
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -912,6 +754,116 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    HPCC
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            HPCC
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hpcc/index_hpcc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HPCC Scripts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hpcc/squeue_scripts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    squeue
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hpcc/chmod/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    chmod
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1058,77 +1010,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#file-permissions-notes" class="md-nav__link">
+  <a href="#generate_kpoint_testsh-path" class="md-nav__link">
     <span class="md-ellipsis">
-      File Permissions Notes
+      generate_kpoint_test.sh path
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#fix_sshsh" class="md-nav__link">
+  <a href="#generate_kpoint_testsh-description" class="md-nav__link">
     <span class="md-ellipsis">
-      fix_ssh.sh
+      generate_kpoint_test.sh Description
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="fix_ssh.sh">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#fix_sshsh-path" class="md-nav__link">
-    <span class="md-ellipsis">
-      fix_ssh.sh path
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fix_ssh-description" class="md-nav__link">
-    <span class="md-ellipsis">
-      fix_ssh Description
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modify_filessh" class="md-nav__link">
+  <a href="#generate_kpoint_testsh-example-usage" class="md-nav__link">
     <span class="md-ellipsis">
-      modify_files.sh
+      generate_kpoint_test.sh Example Usage
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="modify_files.sh">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#modify_filessh-path" class="md-nav__link">
-    <span class="md-ellipsis">
-      modify_files.sh path
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modify_files-description" class="md-nav__link">
-    <span class="md-ellipsis">
-      modify_files Description
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1150,41 +1054,185 @@
   
 
 
-  <h1>chmod</h1>
+  <h1>generate_kpoint_test</h1>
 
-<h2 id="file-permissions-notes">File Permissions Notes</h2>
-<div class="language-text highlight"><span class="filename">/home/jerschro/Scripts/chmod/README</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>How your files should be set up to read
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>First run commands in home directory:
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>setfacl -R -m g::r-x /home/eraider
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>setfacl -R -m g:ME:r-x /home/eraider
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>setfacl -R -m g:chem:r-x /home/eraider
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>Then run fix_ssh.sh to fix the .ssh directory
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>Then run modify_files.sh to turn all files not executable (.sh) to read only.
+<h3 id="generate_kpoint_testsh-path">generate_kpoint_test.sh path</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cp<span class="w"> </span>/home/jerschro/Scripts/vasp/generate_kpoint_test.sh<span class="w"> </span>.
 </span></code></pre></div>
-<h2 id="fix_sshsh">fix_ssh.sh</h2>
-<h3 id="fix_sshsh-path">fix_ssh.sh path</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>cp<span class="w"> </span>/home/jerschro/Scripts/chmod/fix_ssh.sh<span class="w"> </span>.
+<h2 id="generate_kpoint_testsh-description">generate_kpoint_test.sh Description</h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>usage: generate_kpoint_test.sh [-h]
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Script that generates kpoint test directories for vasp and submits jobs (if uncommented).
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>generate_kpoint_test.sh reads orig/ directory in submit directory. Below are files needed in orig/
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  -POSCAR
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  -INCAR
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  -$slurm_file
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  -POTCAR
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>defined variables (located in top of file):
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>  start                 Initial kpoint integer value.
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>  end                   Last kpont integer value.
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>  jobname               Jobname added to slurm_file.
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>  slurm_file            Name of slurm_file. Should have JOB_NAME where you want the jobname.
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>current variables defined in top of file:
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>  $start = 1
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>  $end = 10
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>  $jobname = ex_kpoint_test
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>  $slurm_file = run_vasp.sh
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>options:
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>  -h, --help            show this help message and exit.
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>Written by Jeremy Schroeder 4-13-2024
 </span></code></pre></div>
-<h3 id="fix_ssh-description">fix_ssh Description</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>usage: fix_ssh.sh [-h]
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Fixes file permissions in .ssh folder. Script is meant to be run in home directory.
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>Written by Jeremy Schroeder 2-20-2024
+<h2 id="generate_kpoint_testsh-example-usage">generate_kpoint_test.sh Example Usage</h2>
+<details>
+<summary>Example of generate_kpoint_test.sh Terminal Output</summary>
+
+<div class="language-text highlight"><span class="filename">quanah:/kpoint_test_example$ bash generate_kpoint_test.sh</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a> starting kpoint test program
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a> checking orig folder
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a> orig folder is good, starting to make kpoint folders
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a> kpoints 1x1x1 being created
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a> kpoints 1x1x1 dir done
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a> kpoints 2x2x2 being created
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a> kpoints 2x2x2 dir done
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a> kpoints 3x3x3 being created
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a> kpoints 3x3x3 dir done
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a> kpoints 4x4x4 being created
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a> kpoints 4x4x4 dir done
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a> kpoints 5x5x5 being created
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a> kpoints 5x5x5 dir done
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a> kpoints 6x6x6 being created
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a> kpoints 6x6x6 dir done
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a> kpoints 7x7x7 being created
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a> kpoints 7x7x7 dir done
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a> kpoints 8x8x8 being created
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a> kpoints 8x8x8 dir done
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a> kpoints 9x9x9 being created
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a> kpoints 9x9x9 dir done
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a> kpoints 10x10x10 being created
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a> kpoints 10x10x10 dir done
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a> finished kpoint job submission yayyy
 </span></code></pre></div>
-<h2 id="modify_filessh">modify_files.sh</h2>
-<h3 id="modify_filessh-path">modify_files.sh path</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>cp<span class="w"> </span>/home/jerschro/Scripts/chmod/modify_files.sh<span class="w"> </span>.
+</details>
+
+<details>
+<summary>Example of generate_kpoint_test.sh File Creation</summary>
+
+<div class="language-text highlight"><span class="filename">quanah:/kpoint_test_example$ ls *</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>generate_kpoint_test.sh
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>10x10x10:
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>INCAR  KPOINTS  POSCAR  POTCAR  run_vasp.sh
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>1x1x1:
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>INCAR  KPOINTS  POSCAR  POTCAR  run_vasp.sh
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>2x2x2:
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>INCAR  KPOINTS  POSCAR  POTCAR  run_vasp.sh
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>3x3x3:
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>INCAR  KPOINTS  POSCAR  POTCAR  run_vasp.sh
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>4x4x4:
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>INCAR  KPOINTS  POSCAR  POTCAR  run_vasp.sh
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>5x5x5:
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>INCAR  KPOINTS  POSCAR  POTCAR  run_vasp.sh
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>6x6x6:
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>INCAR  KPOINTS  POSCAR  POTCAR  run_vasp.sh
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>7x7x7:
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>INCAR  KPOINTS  POSCAR  POTCAR  run_vasp.sh
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>8x8x8:
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>INCAR  KPOINTS  POSCAR  POTCAR  run_vasp.sh
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>
+</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>9x9x9:
+</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>INCAR  KPOINTS  POSCAR  POTCAR  run_vasp.sh
+</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>
+</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>orig:
+</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>INCAR  POSCAR  POTCAR  POTCAR  run_vasp.sh
 </span></code></pre></div>
-<h3 id="modify_files-description">modify_files Description</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>usage: modify_files.sh [-h]
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>Recursive script that reads all sub directories and fixes file permissions to all text files and executable scripts.
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>Written by Jeremy Schroeder 2-20-2024
+</details>
+
+<details>
+<summary>Example of generate_kpoint_test.sh KPOINTS Files</summary>
+
+<div class="language-text highlight"><span class="filename">quanah:/kpoint_test_example$ head */KPOINTS</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>==&gt; 10x10x10/KPOINTS &lt;==
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>Automatic
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a> 0
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>Monkhorst
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a> 10  10  10
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a> 0. 0. 0.
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>==&gt; 1x1x1/KPOINTS &lt;==
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>Automatic
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a> 0
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>Monkhorst
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a> 1  1  1
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a> 0. 0. 0.
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>==&gt; 2x2x2/KPOINTS &lt;==
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>Automatic
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a> 0
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>Monkhorst
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a> 2  2  2
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a> 0. 0. 0.
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>==&gt; 3x3x3/KPOINTS &lt;==
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>Automatic
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a> 0
+</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a>Monkhorst
+</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a> 3  3  3
+</span><span id="__span-4-27"><a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a> 0. 0. 0.
+</span><span id="__span-4-28"><a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a>
+</span><span id="__span-4-29"><a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a>==&gt; 4x4x4/KPOINTS &lt;==
+</span><span id="__span-4-30"><a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a>Automatic
+</span><span id="__span-4-31"><a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a> 0
+</span><span id="__span-4-32"><a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a>Monkhorst
+</span><span id="__span-4-33"><a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a> 4  4  4
+</span><span id="__span-4-34"><a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a> 0. 0. 0.
+</span><span id="__span-4-35"><a id="__codelineno-4-35" name="__codelineno-4-35" href="#__codelineno-4-35"></a>
+</span><span id="__span-4-36"><a id="__codelineno-4-36" name="__codelineno-4-36" href="#__codelineno-4-36"></a>==&gt; 5x5x5/KPOINTS &lt;==
+</span><span id="__span-4-37"><a id="__codelineno-4-37" name="__codelineno-4-37" href="#__codelineno-4-37"></a>Automatic
+</span><span id="__span-4-38"><a id="__codelineno-4-38" name="__codelineno-4-38" href="#__codelineno-4-38"></a> 0
+</span><span id="__span-4-39"><a id="__codelineno-4-39" name="__codelineno-4-39" href="#__codelineno-4-39"></a>Monkhorst
+</span><span id="__span-4-40"><a id="__codelineno-4-40" name="__codelineno-4-40" href="#__codelineno-4-40"></a> 5  5  5
+</span><span id="__span-4-41"><a id="__codelineno-4-41" name="__codelineno-4-41" href="#__codelineno-4-41"></a> 0. 0. 0.
+</span><span id="__span-4-42"><a id="__codelineno-4-42" name="__codelineno-4-42" href="#__codelineno-4-42"></a>
+</span><span id="__span-4-43"><a id="__codelineno-4-43" name="__codelineno-4-43" href="#__codelineno-4-43"></a>==&gt; 6x6x6/KPOINTS &lt;==
+</span><span id="__span-4-44"><a id="__codelineno-4-44" name="__codelineno-4-44" href="#__codelineno-4-44"></a>Automatic
+</span><span id="__span-4-45"><a id="__codelineno-4-45" name="__codelineno-4-45" href="#__codelineno-4-45"></a> 0
+</span><span id="__span-4-46"><a id="__codelineno-4-46" name="__codelineno-4-46" href="#__codelineno-4-46"></a>Monkhorst
+</span><span id="__span-4-47"><a id="__codelineno-4-47" name="__codelineno-4-47" href="#__codelineno-4-47"></a> 6  6  6
+</span><span id="__span-4-48"><a id="__codelineno-4-48" name="__codelineno-4-48" href="#__codelineno-4-48"></a> 0. 0. 0.
+</span><span id="__span-4-49"><a id="__codelineno-4-49" name="__codelineno-4-49" href="#__codelineno-4-49"></a>
+</span><span id="__span-4-50"><a id="__codelineno-4-50" name="__codelineno-4-50" href="#__codelineno-4-50"></a>==&gt; 7x7x7/KPOINTS &lt;==
+</span><span id="__span-4-51"><a id="__codelineno-4-51" name="__codelineno-4-51" href="#__codelineno-4-51"></a>Automatic
+</span><span id="__span-4-52"><a id="__codelineno-4-52" name="__codelineno-4-52" href="#__codelineno-4-52"></a> 0
+</span><span id="__span-4-53"><a id="__codelineno-4-53" name="__codelineno-4-53" href="#__codelineno-4-53"></a>Monkhorst
+</span><span id="__span-4-54"><a id="__codelineno-4-54" name="__codelineno-4-54" href="#__codelineno-4-54"></a> 7  7  7
+</span><span id="__span-4-55"><a id="__codelineno-4-55" name="__codelineno-4-55" href="#__codelineno-4-55"></a> 0. 0. 0.
+</span><span id="__span-4-56"><a id="__codelineno-4-56" name="__codelineno-4-56" href="#__codelineno-4-56"></a>
+</span><span id="__span-4-57"><a id="__codelineno-4-57" name="__codelineno-4-57" href="#__codelineno-4-57"></a>==&gt; 8x8x8/KPOINTS &lt;==
+</span><span id="__span-4-58"><a id="__codelineno-4-58" name="__codelineno-4-58" href="#__codelineno-4-58"></a>Automatic
+</span><span id="__span-4-59"><a id="__codelineno-4-59" name="__codelineno-4-59" href="#__codelineno-4-59"></a> 0
+</span><span id="__span-4-60"><a id="__codelineno-4-60" name="__codelineno-4-60" href="#__codelineno-4-60"></a>Monkhorst
+</span><span id="__span-4-61"><a id="__codelineno-4-61" name="__codelineno-4-61" href="#__codelineno-4-61"></a> 8  8  8
+</span><span id="__span-4-62"><a id="__codelineno-4-62" name="__codelineno-4-62" href="#__codelineno-4-62"></a> 0. 0. 0.
+</span><span id="__span-4-63"><a id="__codelineno-4-63" name="__codelineno-4-63" href="#__codelineno-4-63"></a>
+</span><span id="__span-4-64"><a id="__codelineno-4-64" name="__codelineno-4-64" href="#__codelineno-4-64"></a>==&gt; 9x9x9/KPOINTS &lt;==
+</span><span id="__span-4-65"><a id="__codelineno-4-65" name="__codelineno-4-65" href="#__codelineno-4-65"></a>Automatic
+</span><span id="__span-4-66"><a id="__codelineno-4-66" name="__codelineno-4-66" href="#__codelineno-4-66"></a> 0
+</span><span id="__span-4-67"><a id="__codelineno-4-67" name="__codelineno-4-67" href="#__codelineno-4-67"></a>Monkhorst
+</span><span id="__span-4-68"><a id="__codelineno-4-68" name="__codelineno-4-68" href="#__codelineno-4-68"></a> 9  9  9
+</span><span id="__span-4-69"><a id="__codelineno-4-69" name="__codelineno-4-69" href="#__codelineno-4-69"></a> 0. 0. 0.
 </span></code></pre></div>
+
+</details>
 
 
 
@@ -1222,7 +1270,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../squeue_scripts/" class="md-footer__link md-footer__link--prev" aria-label="Previous: squeue">
+          <a href="../vasp_thermo/" class="md-footer__link md-footer__link--prev" aria-label="Previous: vasp_thermo">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1232,20 +1280,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                squeue
+                vasp_thermo
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../misc/index_misc/" class="md-footer__link md-footer__link--next" aria-label="Next: Misc Scripts">
+          <a href="../../hpcc/index_hpcc/" class="md-footer__link md-footer__link--next" aria-label="Next: HPCC Scripts">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Misc Scripts
+                HPCC Scripts
               </div>
             </div>
             <div class="md-footer__button md-icon">

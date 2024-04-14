@@ -25,6 +25,7 @@ nav:
   - Misc :
     - Misc Scripts : misc/index_misc.md
     - combine csv files : misc/combine_csv_files.md
+  - Glossary : glossary.md
   # - todo : todo.md
 
 
