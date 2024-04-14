@@ -17,6 +17,7 @@ nav:
     - VASP Scripts : vasp/index_vasp.md
     - vasp_energy : vasp/vasp_energy.md
     - vasp_thermo : vasp/vasp_thermo.md
+    - generate_kpoint_test : vasp/generate_kpoint.md
   - HPCC :
     - HPCC Scripts : hpcc/index_hpcc.md
     - squeue : hpcc/squeue_scripts.md
@@ -24,7 +25,7 @@ nav:
   - Misc :
     - Misc Scripts : misc/index_misc.md
     - combine csv files : misc/combine_csv_files.md
-  - todo : todo.md
+  # - todo : todo.md
 
 
 theme:
