@@ -1,12 +1,12 @@
 
-## freq Alias
+## Alias of freq
 
 ``` bash
 alias freq='bash /home/jerschro/Scripts/turbomole/freq.sh'
 
 ```
 
-## freq Description
+## Description of freq
 
 ```
 usage: freq.sh [-h] [--vib_freq_method {n,N,NumForce,a,aoforce}] [-s SCF_CONV] [-n] [--partition {quanah,nocona}]
