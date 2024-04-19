@@ -12,25 +12,25 @@
         <meta name="author" content="Jeremy Schroeder">
       
       
-        <link rel="canonical" href="https://jerschro.github.io/dft_scripts_documentation/turbomole/define_and_submit/">
+        <link rel="canonical" href="https://jerschro.github.io/dft_scripts_documentation/turbomole/freq/">
       
       
-        <link rel="prev" href="../freeh/">
+        <link rel="prev" href="../geo_opt/">
       
       
-        <link rel="next" href="../read_control/">
+        <link rel="next" href="../../vasp/index_vasp/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.14">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
     
     
       
-        <title>geo_opt - dft scripts documentation</title>
+        <title>freq - dft scripts documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.10ba22f1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -87,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#alias-for-hpcc" class="md-skip">
+        <a href="#freq-alias" class="md-skip">
           Skip to content
         </a>
       
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              geo_opt
+              freq
             
           </span>
         </div>
@@ -527,6 +527,48 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../read_control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    read_control
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../geo_opt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    geo_opt
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -541,7 +583,7 @@
           
   
   <span class="md-ellipsis">
-    geo_opt
+    freq
   </span>
   
 
@@ -552,7 +594,7 @@
         
   
   <span class="md-ellipsis">
-    geo_opt
+    freq
   </span>
   
 
@@ -572,18 +614,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#alias-for-hpcc" class="md-nav__link">
+  <a href="#freq-alias" class="md-nav__link">
     <span class="md-ellipsis">
-      Alias for HPCC
+      freq Alias
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#description-of-geo_opt" class="md-nav__link">
+  <a href="#freq-description" class="md-nav__link">
     <span class="md-ellipsis">
-      Description of geo_opt
+      freq Description
     </span>
   </a>
   
@@ -593,27 +635,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../read_control/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    read_control
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1001,18 +1022,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#alias-for-hpcc" class="md-nav__link">
+  <a href="#freq-alias" class="md-nav__link">
     <span class="md-ellipsis">
-      Alias for HPCC
+      freq Alias
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#description-of-geo_opt" class="md-nav__link">
+  <a href="#freq-description" class="md-nav__link">
     <span class="md-ellipsis">
-      Description of geo_opt
+      freq Description
     </span>
   </a>
   
@@ -1036,28 +1057,40 @@
   
 
 
-  <h1>geo_opt</h1>
+  <h1>freq</h1>
 
-<h2 id="alias-for-hpcc">Alias for HPCC</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">geo_opt</span><span class="o">=</span><span class="s1">&#39;bash /home/jerschro/Scripts/turbomole/run_define_and_submit_job.sh&#39;</span>
+<h2 id="freq-alias">freq Alias</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">freq</span><span class="o">=</span><span class="s1">&#39;bash /home/jerschro/Scripts/turbomole/freq.sh&#39;</span>
 </span></code></pre></div>
-<h2 id="description-of-geo_opt">Description of geo_opt</h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>usage: geo_opt [-h] STRUCTURE_FILEPATH JOB_NAME BASIS_SET CHARGE DFT_FUNCTIONAL SCF_CONV
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Script that submits a geometry optimization calculation when arguments are supplied.
+<h2 id="freq-description">freq Description</h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>usage: freq.sh [-h] [--vib_freq_method {n,N,NumForce,a,aoforce}] [-s SCF_CONV] [-n] [--partition {quanah,nocona}]
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>               [--nodes NODES] [--cpus CPUS] [--time TIME] [--mem_per_cpu MEM_PER_CPU]
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>               GEO_OPT_DIR JOB_NAME
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>positional arguments:
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  STRUCTURE_FILEPATH    Filepath to initial .xyz structure file.
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  JOB_NAME              Name you want the job to be in the slurm file.
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  BASIS_SET             Basis Set for calculation. Remember for example if you want SV(P), you need to type it as SV\(P\).
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  CHARGE                Initial charge for calculation. It is almost always 0.
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  DFT_FUNCTIONAL        Functional for calculation.
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  SCF_CONV              SCF Convergence criteria. Standard is 6 for optimization, 8 for frequency.
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>options:
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>  -h, --help            show this help message and exit.
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>Written by Jeremy Schroeder 4-12-2024
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>Script that submits a frequency calculation when arguments are supplied.
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>positional arguments:
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  GEO_OPT_DIR           Filepath to initial .xyz structure file or coord file.
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  JOB_NAME              Name you want the job to be in the slurm file.
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>options:
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>  -h, --help            show this help message and exit
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>  --vib_freq_method {n,N,NumForce,a,aoforce}
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>                        What Frequency function you want.
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>  -s SCF_CONV, --scf_conv SCF_CONV
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>                        SCF Convergence criteria. Standard is 6 for optimization, 8 for frequency. Default is 8.
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>  -n, --no_sbatch       Stop auto submission of geo_opt job.
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>  --partition {quanah,nocona}
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>                        Partition of where the job should be submitted. Default is quanah.
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>  --nodes NODES         Nodes on partition. Default is 1.
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>  --cpus CPUS           Total CPUS. Default is 36.
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>  --time TIME           Total time limit for job. Default is 48:00:00
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>  --mem_per_cpu MEM_PER_CPU
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>                        Total time limit for job. Default is 5200MB
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>Written by Jeremy Schroeder 4-18-2024.
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>    Implements expect scripts and ideals from Tristan Fisher.
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>    Uses bash library: https://github.com/nhoffman/argparse-bash
 </span></code></pre></div>
 
 
@@ -1096,7 +1129,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../freeh/" class="md-footer__link md-footer__link--prev" aria-label="Previous: freeh">
+          <a href="../geo_opt/" class="md-footer__link md-footer__link--prev" aria-label="Previous: geo_opt">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1106,20 +1139,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                freeh
+                geo_opt
               </div>
             </div>
           </a>
         
         
           
-          <a href="../read_control/" class="md-footer__link md-footer__link--next" aria-label="Next: read_control">
+          <a href="../../vasp/index_vasp/" class="md-footer__link md-footer__link--next" aria-label="Next: VASP Scripts">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                read_control
+                VASP Scripts
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1194,7 +1227,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.footer", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.instant", "navigation.top", "navigation.tracking", "navigate.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.bd41221c.min.js"></script>
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>

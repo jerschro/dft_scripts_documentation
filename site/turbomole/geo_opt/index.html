@@ -12,13 +12,13 @@
         <meta name="author" content="Jeremy Schroeder">
       
       
-        <link rel="canonical" href="https://jerschro.github.io/dft_scripts_documentation/vasp/index_vasp/">
+        <link rel="canonical" href="https://jerschro.github.io/dft_scripts_documentation/turbomole/geo_opt/">
       
       
-        <link rel="prev" href="../../turbomole/freq/">
+        <link rel="prev" href="../read_control/">
       
       
-        <link rel="next" href="../vasp_energy/">
+        <link rel="next" href="../freq/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>VASP Scripts - dft scripts documentation</title>
+        <title>geo_opt - dft scripts documentation</title>
       
     
     
@@ -87,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#vasp-scripts" class="md-skip">
+        <a href="#alias-for-hpcc" class="md-skip">
           Skip to content
         </a>
       
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              VASP Scripts
+              geo_opt
             
           </span>
         </div>
@@ -256,11 +256,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../turbomole/index_turbomole/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../index_turbomole/" class="md-tabs__link">
           
   
   Turbomole
@@ -274,13 +276,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../vasp/index_vasp/" class="md-tabs__link">
           
   
   VASP
@@ -419,25 +419,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -448,7 +453,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Turbomole
@@ -462,7 +467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../turbomole/index_turbomole/" class="md-nav__link">
+      <a href="../index_turbomole/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -483,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../turbomole/turbo_dir/" class="md-nav__link">
+      <a href="../turbo_dir/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -504,7 +509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../turbomole/freeh/" class="md-nav__link">
+      <a href="../freeh/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -525,7 +530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../turbomole/read_control/" class="md-nav__link">
+      <a href="../read_control/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -543,10 +548,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../turbomole/geo_opt/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    geo_opt
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -555,6 +578,42 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#alias-for-hpcc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alias for HPCC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description-of-geo_opt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description of geo_opt
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -567,7 +626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../turbomole/freq/" class="md-nav__link">
+      <a href="../freq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -592,30 +651,25 @@
       
   
   
-    
   
   
-  
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -626,7 +680,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             VASP
@@ -637,19 +691,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../vasp/index_vasp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -658,7 +703,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -671,7 +715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vasp_energy/" class="md-nav__link">
+      <a href="../../vasp/vasp_energy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -692,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vasp_thermo/" class="md-nav__link">
+      <a href="../../vasp/vasp_thermo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -713,7 +757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../generate_kpoint/" class="md-nav__link">
+      <a href="../../vasp/generate_kpoint/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -970,8 +1014,32 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#alias-for-hpcc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alias for HPCC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description-of-geo_opt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description of geo_opt
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -989,12 +1057,45 @@
   
 
 
-<h1 id="vasp-scripts">Vasp Scripts</h1>
-<ol>
-<li><a href="../vasp_energy/">vasp_energy</a> - This script reads OUTCAR files and prints out tabular information from the OUTCAR files.</li>
-<li><a href="../vasp_thermo/">vasp_thermo</a> - Scripts for thermochemistry results from VASP frequency calculations</li>
-<li><a href="../generate_kpoint/">generate_kpoint_test</a> - Script that generates kpoint test directories for vasp and submits jobs (if uncommented).</li>
-</ol>
+  <h1>geo_opt</h1>
+
+<h2 id="alias-for-hpcc">Alias for HPCC</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">geo_opt</span><span class="o">=</span><span class="s1">&#39;bash /home/jerschro/Scripts/turbomole/geo_opt.sh&#39;</span>
+</span></code></pre></div>
+<h2 id="description-of-geo_opt">Description of geo_opt</h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>usage: geo_opt.sh [-h] [-c CHARGE] [-s SCF_CONV] [-f FROZEN_ATOMS [FROZEN_ATOMS ...]] [-n] [--partition {quanah,nocona}]
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>                  [--nodes NODES] [--cpus CPUS] [--time TIME] [--mem_per_cpu MEM_PER_CPU]
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>                  STRUCTURE_FILEPATH JOB_NAME BASIS_SET DFT_FUNCTIONAL
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>Script that submits a TURBOMOLE geometry optimization calculation when arguments are supplied.
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>positional arguments:
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  STRUCTURE_FILEPATH    Filepath to initial .xyz structure file or coord file.
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  JOB_NAME              Name you want the job to be in the slurm file.
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  BASIS_SET             Basis Set for calculation. Remember for example if you want SV(P), you need to type it as SV\(P\).
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  DFT_FUNCTIONAL        Functional for calculation.
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>options:
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>  -h, --help            show this help message and exit
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>  -c CHARGE, --charge CHARGE
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>                        Initial charge for calculation. Default is 0.
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>  -s SCF_CONV, --scf_conv SCF_CONV
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>                        SCF Convergence criteria. Standard is 6 for optimization, 8 for frequency. Default is 6.
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>  -f FROZEN_ATOMS [FROZEN_ATOMS ...], --frozen_atoms FROZEN_ATOMS [FROZEN_ATOMS ...]
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>                        Type list of species you want to freeze. Default list is [&#39;al&#39;,&#39;ti&#39;].
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>  -n, --no_sbatch       Stop auto submission of geo_opt job.
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>  --partition {quanah,nocona}
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>                        Partition of where the job should be submitted. Default is quanah.
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>  --nodes NODES         Nodes on partition. Default is 1.
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>  --cpus CPUS           Total CPUS. Default is 36.
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>  --time TIME           Total time limit for job. Default is 48:00:00
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>  --mem_per_cpu MEM_PER_CPU
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>                        Total time limit for job. Default is 5200MB
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>Written by Jeremy Schroeder 4-18-2024.
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>    Implements expect scripts and ideals from Tristan Fisher.
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>    Uses bash library: https://github.com/nhoffman/argparse-bash
+</span></code></pre></div>
 
 
 
@@ -1032,7 +1133,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../turbomole/freq/" class="md-footer__link md-footer__link--prev" aria-label="Previous: freq">
+          <a href="../read_control/" class="md-footer__link md-footer__link--prev" aria-label="Previous: read_control">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1042,20 +1143,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                freq
+                read_control
               </div>
             </div>
           </a>
         
         
           
-          <a href="../vasp_energy/" class="md-footer__link md-footer__link--next" aria-label="Next: vasp_energy">
+          <a href="../freq/" class="md-footer__link md-footer__link--next" aria-label="Next: freq">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                vasp_energy
+                freq
               </div>
             </div>
             <div class="md-footer__button md-icon">

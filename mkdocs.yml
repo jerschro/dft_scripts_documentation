@@ -11,8 +11,9 @@ nav:
     - Turbomole Scripts : turbomole/index_turbomole.md
     - turbo_dir : turbomole/turbo_dir.md
     - freeh : turbomole/freeh.md
-    - geo_opt : turbomole/define_and_submit.md
     - read_control : turbomole/read_control.md
+    - geo_opt : turbomole/geo_opt.md
+    - freq : turbomole/freq.md
   - VASP :
     - VASP Scripts : vasp/index_vasp.md
     - vasp_energy : vasp/vasp_energy.md
