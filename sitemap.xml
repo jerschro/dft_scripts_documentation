@@ -2,82 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://jerschro.github.io/dft_scripts_documentation/</loc>
-         <lastmod>2024-04-14</lastmod>
+         <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jerschro.github.io/dft_scripts_documentation/glossary/</loc>
-         <lastmod>2024-04-14</lastmod>
+         <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jerschro.github.io/dft_scripts_documentation/hpcc/chmod/</loc>
-         <lastmod>2024-04-14</lastmod>
+         <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jerschro.github.io/dft_scripts_documentation/hpcc/index_hpcc/</loc>
-         <lastmod>2024-04-14</lastmod>
+         <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jerschro.github.io/dft_scripts_documentation/hpcc/squeue_scripts/</loc>
-         <lastmod>2024-04-14</lastmod>
+         <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jerschro.github.io/dft_scripts_documentation/misc/combine_csv_files/</loc>
-         <lastmod>2024-04-14</lastmod>
+         <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jerschro.github.io/dft_scripts_documentation/misc/index_misc/</loc>
-         <lastmod>2024-04-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://jerschro.github.io/dft_scripts_documentation/turbomole/define_and_submit/</loc>
-         <lastmod>2024-04-14</lastmod>
+         <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jerschro.github.io/dft_scripts_documentation/turbomole/freeh/</loc>
-         <lastmod>2024-04-14</lastmod>
+         <lastmod>2024-04-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/dft_scripts_documentation/turbomole/freq/</loc>
+         <lastmod>2024-04-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jerschro.github.io/dft_scripts_documentation/turbomole/geo_opt/</loc>
+         <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jerschro.github.io/dft_scripts_documentation/turbomole/index_turbomole/</loc>
-         <lastmod>2024-04-14</lastmod>
+         <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jerschro.github.io/dft_scripts_documentation/turbomole/read_control/</loc>
-         <lastmod>2024-04-14</lastmod>
+         <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jerschro.github.io/dft_scripts_documentation/turbomole/turbo_dir/</loc>
-         <lastmod>2024-04-14</lastmod>
+         <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jerschro.github.io/dft_scripts_documentation/vasp/generate_kpoint/</loc>
-         <lastmod>2024-04-14</lastmod>
+         <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jerschro.github.io/dft_scripts_documentation/vasp/index_vasp/</loc>
-         <lastmod>2024-04-14</lastmod>
+         <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jerschro.github.io/dft_scripts_documentation/vasp/vasp_energy/</loc>
-         <lastmod>2024-04-14</lastmod>
+         <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jerschro.github.io/dft_scripts_documentation/vasp/vasp_thermo/</loc>
-         <lastmod>2024-04-14</lastmod>
+         <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
